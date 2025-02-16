@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayo Ti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ayo Ti - Vehicle Management</h1>
+  <div id="auth-section">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="vehicle-model" placeholder="Vehicle Model" required>
+      <button type="submit">Register</button>
+    </form>
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <div id="dashboard" style="display: none;">
+    <h2>Your Vehicle Data</h2>
+    <p>Fuel Level: <span id="fuel-level"></span></p>
+    <p>GPS: <span id="gps"></span></p>
+    <p>RPM: <span id="rpm"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
